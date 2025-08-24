@@ -32,15 +32,16 @@
 ```js
 todo.addTodo("자바스크립트 공부");
 todo.addTodo("운동하기");
+todo.addTodo("책읽기");
 todo.printTodoList();
 
-todo.toggleTodo(a.id);
+todo.toggleTodo(0);
 todo.printTodoList();
 
-todo.modifyTodo(b.id, "매일 아침 운동하기");
+todo.modifyTodo(1, "매일 아침 운동하기");
 todo.printTodoList();
 
-todo.deleteTodo(a.id);
+todo.deleteTodo(2);
 todo.printTodoList();
 ```
 
@@ -146,5 +147,13 @@ const todoList = [
 | 기능               | 함수명         | 설명                                     |
 | ------------------ | -------------- | ---------------------------------------- |
 | todoList 탐색 함수 | searchTodo(id) | id값에 해당하는 객체 찾아 index값을 반환 |
+
+<br/>
+
+---
+
+## 실행 결과
+
+<img src="./screenshot.png">
 
 <br/>
