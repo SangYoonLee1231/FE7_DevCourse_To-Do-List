@@ -44,7 +44,7 @@ function modifyTodo(id, text) {
 function toggleTodo(id) {
   const index = searchTodo(id);
   if (index !== -1) {
-    todoList[index.isCompleted] = !todoList[index].isCompleted;
+    todoList[index].isCompleted = !todoList[index].isCompleted;
   } else {
     console.log("할일을 찾을 수 없습니다.");
   }
@@ -62,3 +62,5 @@ function printTodoList() {
     );
   });
 }
+
+export { addTodo, deleteTodo, modifyTodo, toggleTodo, printTodoList };

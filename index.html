@@ -16,18 +16,19 @@
       window.todo = todo;
 
       // 아래는 모의 호출 예시 (주석 해제하고 새로고침하면 자동 실행됨)
-      // todo.addTodo("자바스크립트 공부");
-      // todo.addTodo("운동하기");
-      // todo.printTodoList();
+      todo.addTodo("자바스크립트 공부");
+      todo.addTodo("운동하기");
+      todo.addTodo("책읽기");
+      todo.printTodoList();
 
-      // todo.toggleTodo(a.id);
-      // todo.printTodoList();
+      todo.toggleTodo(0);
+      todo.printTodoList();
 
-      // todo.modifyTodo(b.id, "매일 아침 운동하기");
-      // todo.printTodoList();
+      todo.modifyTodo(1, "매일 아침 운동하기");
+      todo.printTodoList();
 
-      // todo.deleteTodo(a.id);
-      // todo.printTodoList();
+      todo.deleteTodo(2);
+      todo.printTodoList();
     </script>
   </body>
 </html>
