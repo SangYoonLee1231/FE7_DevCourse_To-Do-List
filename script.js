@@ -11,8 +11,6 @@ function searchTodo(id) {
   return todoList.findIndex((todo) => todo.id === id);
 }
 
-//
-
 // 할일 추가
 function addTodo(text) {
   const newTodo = createTodo();
@@ -56,11 +54,12 @@ function printTodoList() {
     console.log("할일 목록이 비어 있습니다.");
     return;
   }
-  todoList.forEach((todo) => {
-    console.log(
-      `ID: ${todo.id}, 할일: ${todo.data}, 완료여부: ${todo.isCompleted}`
-    );
-  });
+  const rows = todoList.map((item) => ({
+    id: item.id,
+    text: item.data,
+    isCompleted: item.isCompleted ? ":확인_표시가_있는_투표함:" : "☐",
+  }));
+  console.table(rows);
 }
 
 export { addTodo, deleteTodo, modifyTodo, toggleTodo, printTodoList };
