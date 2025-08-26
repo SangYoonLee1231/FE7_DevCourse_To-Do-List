@@ -57,7 +57,7 @@ function printTodoList() {
   const rows = todoList.map((item) => ({
     id: item.id,
     text: item.data,
-    isCompleted: item.isCompleted ? ":확인_표시가_있는_투표함:" : "☐",
+    isCompleted: item.isCompleted ? "☑️" : "☐",
   }));
   console.table(rows);
 }
